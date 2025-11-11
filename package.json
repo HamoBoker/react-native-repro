@@ -9,6 +9,8 @@
     "lint": "eslint .",
     "start": "react-native start --reset-cache",
     "test": "jest",
+    "logcat": "adb logcat | grep -iE 'com.repro|FATAL|Exception'",
+    "logcat-clear": "adb logcat -c",
     "clean": "node ./scripts/clean-dependencies.mjs",
     "check:updates": "pnpm dlx npm-check-updates@latest --install never"
   },
