@@ -1,0 +1,4 @@
+onlyBuiltDependencies:
+  - react-native-nitro-image
+  - react-native-nitro-modules
+  - react-native-nitro-web-image

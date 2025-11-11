@@ -1,0 +1,15 @@
+{
+  "cache": false,
+  "cacheFile": "./.ncu-cache.json",
+  "upgrade": true,
+  "interactive": true,
+  "jsonUpgraded": true,
+  "color": true,
+  "silent": false,
+  "verbose": true,
+  "packageManager": "pnpm",
+  "install": "prompt",
+  "concurrency": 8,
+  "format": ["group", "ownerChanged", "time"],
+  "timeout": 9999999
+}
