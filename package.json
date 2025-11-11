@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start:android": "pnpm start & pnpm android",
-    "android": "react-native run-android",
+    "start:android": "pnpm dlx concurrently@latest --handle-input --raw --kill-others-on-fail -p '[{name}]' -n 'App,Build' -c 'yellow.bold,cyan.bold' 'pnpm start' 'sleep 5 && pnpm android'",
+    "android": "react-native run-android --active-arch-only --list-devices",
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start --reset-cache",
